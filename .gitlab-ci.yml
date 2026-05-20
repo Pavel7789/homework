@@ -1,0 +1,15 @@
+stages:
+  - build
+  - test
+
+build-job:
+  stage: build
+  image: alpine:latest
+  script:
+    - echo "кто молодец?"
+
+test-job:
+  stage: test
+  image: alpine:latest
+  script:
+    - echo "я молодец!"
